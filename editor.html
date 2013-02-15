@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>map editor</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <script src="editor.js" type="text/javascript"></script>
+  
+  <table id="tools"><tr>
+  <td>
+  <input id="filename" type="text" value="untitled" />
+  <input id="save" type="button" value="save" /><br />
+  <input id="load" type="file" />
+  </td>
+  
+  <td>
+  <input id="undo" type="button" value="undo" /><br />
+  <input id="redo" type="button" value="redo" />
+  </td>
+  
+  <td>
+  <input id="pencil" type="radio" name="tool" value="pencil" checked="checked" />pencil<br/>
+  <input id="rectangle" type="radio" name="tool" value="rectangle" />rectangle
+  </td>
+  
+  <td>
+  layer: <div id="layer"></div><br />
+  <input id="up" type="button" value="up" /><input id="down" type="button" value="down" />
+  </td>
+  
+  <td>
+  tileset:<br/>
+  <form id="tilesetform"><input id="tileset" type="file" /></form>
+  </td>
+  
+  <td>
+  map size:<br />
+  <input id="mapwidth" type="text" /> <input id="mapheight" type="text" /> <input id="mapdepth" type="text" /><br />
+  <input id="resizemap" type="button" value="resize" /><input id="cancelresizemap" type="button" value="cancel" />
+  </td>
+  
+  <td>
+  tile size:<br />
+  <input id="tilewidth" type="text" /> <input id="tileheight" type="text" /> <input id="tiledepth" type="text" /><br />
+  <input id="resizetiles" type="button" value="resize" /><input id="cancelresizetiles" type="button" value="cancel" />
+  </td>
+  </tr></table>
+  
+  <canvas id="palette" width="16" height="24"></canvas>
+  
+  <div id="mapcontainer">
+  <canvas id="map" width="20" height="20">your browser is not supported.</canvas>
+  </div>
+</body>
+
+</html>

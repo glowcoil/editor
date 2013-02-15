@@ -1,0 +1,29 @@
+body {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+#tools tr td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+#filename {
+  width: 100px;
+}
+
+#layer {
+  display: inline;
+}
+
+#mapcontainer {
+  clear: all;
+}
+
+#map, #palette {
+  margin: 10px;
+}
+
+#tilewidth, #tileheight, #tiledepth, #mapwidth, #mapheight, #mapdepth {
+  width: 24px;
+}
